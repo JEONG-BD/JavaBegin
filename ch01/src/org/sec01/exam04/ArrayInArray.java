@@ -24,7 +24,13 @@ public class ArrayInArray {
         englishScores[1] = new int[3];
         System.out.println(Arrays.deepToString(englishScores));
 
+        int arrScores[][] = {{90, 89}, {88, 87, 86}};
 
+        for (int i=0; i<arrScores.length; i++){
+            for (int k=0; k<arrScores[i].length; k++){
+                System.out.println(arrScores[i][k]);
+            }
+        }
 
     }
 }
