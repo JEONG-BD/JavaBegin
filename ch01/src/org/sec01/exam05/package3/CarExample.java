@@ -12,15 +12,19 @@ public class CarExample {
                 case 1 :
                     System.out.println("앞 왼쪽 타이어 교체");
                     car01.frontLeftTire = new HankookTire("한국", 15);
+                    break;
                 case 2 :
                     System.out.println("앞 오른쪽 타이어 교체");
-                    car01.frontLeftTire = new KumhoTire("금호", 15);
-                case 3 :
+                    car01.frontRightTire = new KumhoTire("금호", 15);
+                break;
+                    case 3 :
                     System.out.println("뒤 왼쪽 타이어 교체");
-                    car01.frontLeftTire = new HankookTire("한국", 14);
+                    car01.backLeftTire = new HankookTire("한국", 14);
+                    break;
                 case 4 :
                     System.out.println("뒤 오른쪽 타이어 교체");
-                    car01.frontLeftTire = new KumhoTire("금호", 17);
+                    car01.backtRightTire = new KumhoTire("금호", 17);
+                    break;
             }
             System.out.println("===========");
 

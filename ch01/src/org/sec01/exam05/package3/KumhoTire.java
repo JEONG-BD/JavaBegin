@@ -7,12 +7,12 @@ public class KumhoTire extends Tire {
 
     @Override
     public boolean roll() {
-        ++accmulateRotation;
-        if(accmulateRotation < maxRotation){
-            System.out.println(location + " kumhoTire 수명" + (maxRotation - accmulateRotation) + "회");
+        ++accumulateRotation;
+        if(accumulateRotation < maxRotation){
+            System.out.println(location + " kumhoTire 수명 " + (maxRotation - accumulateRotation) + "회");
             return true;
         }else {
-            System.out.println("***" + location + " kumho Tire 펑크 ***" );
+            System.out.println("*** " + location + " kumho Tire 펑크 ***" );
             return false;
         }
     }
